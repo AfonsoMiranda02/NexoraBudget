@@ -1,0 +1,147 @@
+/* Master Dashboard Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    height: 80px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(27, 27, 62, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}   
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: #1B1B3E;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #220940;
+    transition: left 0.3s ease;
+}
+
+.nav-btn:hover::after,
+.nav-btn.active::after {
+    left: 0;
+}
+
+.nav-btn:hover {
+    color: #220940;
+}
+
+.user-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Sidebar */
+.sidebar-master {
+    width: 220px;
+    background: white;
+    border-right: 1px solid #e5e7eb;
+    overflow-y: auto;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    flex: 1;
+    padding: 40px;
+    background: #f3f4f6;
+}
+/* Dashboard Container */
+.dashboard-container {
+    flex: 1;
+    padding: 40px;
+    background: #f3f4f6;
+    margin-left: 220px;
+    min-height: calc(100vh - 140px);
+}
+
+/* Footer */
+.footer {
+    height: 60px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar-master {
+        display: none;
+    }
+    
+    .sidebar-master.active {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        height: calc(100vh - 140px);
+    }
+    
+    .dashboard-container {
+        margin-left: 0;
+        padding: 20px;
+    }
+} 
