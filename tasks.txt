@@ -1,1 +1,12 @@
 arranjar a sidebar na página @master_dashboard.php
+♥ = done
+x = undone
+
+Bd-Sql Lite: fuck that nigga
+gestão Imgs, site and files/bd : ♥
+painel adm bootstrap: fuck this shit
+integração de dados: ♥
+login seguro:♥
+sameshit pages yes yes:♥
+logout: ♥
+some extra shi:♥

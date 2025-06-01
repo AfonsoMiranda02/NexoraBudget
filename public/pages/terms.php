@@ -5,7 +5,7 @@ require_once __DIR__ . '/../components/header.php';
 
 <div class="terms-container">
     <div class="terms-box">
-        <h1>Terms and GDPR</h1>
+        <h1>Terms and RGPD</h1>
         <p>
             Welcome to NexoraHub. Please read our terms of service and data protection policy (GDPR) carefully.<br><br>
 
